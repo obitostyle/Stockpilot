@@ -10,7 +10,7 @@ O programa StockPilot **não envia os seus dados para ninguém**. Tudo o que voc
 
 ## 2. Quem é o responsável
 
-**Breno Sidney Ribeiro Monsor**, CPF **183.***.***-89**, contato para assuntos de privacidade: **entrepaines@gmail.com**.
+**Breno Sidney Ribeiro Monsor**, CPF **183.xxx.xxx-89**, contato para assuntos de privacidade: **entrepaines@gmail.com**.
 
 ## 3. Dados que ficam só no seu computador
 

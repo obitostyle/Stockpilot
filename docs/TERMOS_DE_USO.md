@@ -6,7 +6,7 @@
 
 ## 1. Quem somos
 
-O StockPilot é um programa de computador para Windows, oferecido por **Breno Sidney Ribeiro Monsor**, inscrito sob o CPF **183.***.***-89**, contato **entrepaines@gmail.com** ("Fabricante"). Quem compra e usa o programa é o "Usuário".
+O StockPilot é um programa de computador para Windows, oferecido por **Breno Sidney Ribeiro Monsor**, inscrito sob o CPF **183.xxx.xxx-89**, contato **entrepaines@gmail.com** ("Fabricante"). Quem compra e usa o programa é o "Usuário".
 
 ## 2. O que o programa é
 
