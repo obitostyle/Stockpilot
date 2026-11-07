@@ -16,15 +16,23 @@ Três avisos importantes:
 
 ## 1. Instalação
 
-1. Baixe o instalador `StockPilot-Setup-<versão>.exe` pelo link que você recebeu.
-2. Dê dois cliques no arquivo e siga as telas. A instalação leva cerca de um minuto.
-3. Ao final, marque "Abrir o StockPilot agora" ou use o atalho da Área de Trabalho.
+O Windows costuma bloquear programas baixados da internet que ainda não são conhecidos. Isso é normal e se resolve em 1 minuto. Siga os passos **na ordem**:
 
-**Se o Windows mostrar "O Windows protegeu seu computador":** isso acontece com programas novos ou sem assinatura digital reconhecida. Clique em **Mais informações** e depois em **Executar assim mesmo**.
+1. **Baixe o arquivo** pelo link que você recebeu. Pode vir como `.zip` ou como instalador `StockPilot-Setup-<versão>.exe`.
+2. **Destrave o arquivo baixado** (faça isso antes de abrir):
+   1. Clique com o **botão direito** no arquivo baixado (o `.zip` ou o `.exe`).
+   2. Escolha **Propriedades**.
+   3. Na parte de baixo da aba **Geral**, marque a caixa **Desbloquear**. Se ela não aparecer, o arquivo já está liberado.
+   4. Clique em **Aplicar** e depois em **OK**.
+3. **Se veio em `.zip`:** clique com o botão direito no arquivo e escolha **Extrair tudo**. Abra a pasta que foi criada.
+4. **Dê dois cliques no instalador** `StockPilot-Setup-<versão>.exe` e siga as telas, como em qualquer programa. Leva cerca de um minuto.
+5. Ao final, marque **Abrir o StockPilot agora** ou use o atalho da Área de Trabalho.
 
-**Se o arquivo for bloqueado ou não abrir:** clique com o botão direito no instalador, escolha **Propriedades**, marque **Desbloquear** na parte de baixo e clique em OK. Depois abra de novo. Se o seu Windows tiver o *Controle de Aplicativo Inteligente* ligado, ele pode bloquear programas novos; nesse caso fale com o suporte.
+**Se aparecer "O Windows protegeu seu computador":** clique em **Mais informações** e depois em **Executar assim mesmo**. O aviso aparece porque o programa é novo para o Windows, não porque tenha algum problema.
 
-**Atualizar:** instale a versão nova por cima da antiga. Seus dados não são apagados.
+**Se aparecer "Controle de Aplicativo Inteligente bloqueou parte deste aplicativo":** confirme que fez o passo 2 (Desbloquear) no arquivo baixado, extraia de novo e tente outra vez. Se continuar, escreva para o suporte.
+
+**Atualizar:** baixe a versão nova, destrave e instale por cima da antiga. Seus dados não são apagados.
 
 **Desinstalar:** pelo painel do Windows. Seus dados e backups ficam guardados em `%LOCALAPPDATA%\StockPilot` e só saem de lá se você apagar a pasta.
 
