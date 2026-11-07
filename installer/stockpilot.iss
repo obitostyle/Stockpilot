@@ -1,11 +1,11 @@
 ; Inno Setup 6/7 — instalador do StockPilot
 ; Compilar:  ISCC.exe /DAppVersion=0.1.0 installer\stockpilot.iss     (o build_windows.bat faz isso)
 #ifndef AppVersion
-  #define AppVersion "0.7.0"
+  #define AppVersion "0.7.1"
 #endif
 #if AppVersion == ""
   #undef AppVersion
-  #define AppVersion "0.7.0"
+  #define AppVersion "0.7.1"
 #endif
 #define AppName "StockPilot"
 #define AppExe "StockPilot.exe"

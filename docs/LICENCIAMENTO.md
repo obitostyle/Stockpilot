@@ -1,3 +1,5 @@
+> **Desligado.** Desde 06/11/2026 o StockPilot é vendido sem ativação por licença (`LICENSING_ENABLED = False`). Este documento descreve o mecanismo que continua no código, caso a decisão mude.
+
 # Licenciamento (pagamento único, offline)
 
 **Como funciona:** o cliente abre *Configurações → Licença*, copia o **ID da instalação** (`SP-XXXX-XXXX-XXXX-XXXX`) e envia a você.

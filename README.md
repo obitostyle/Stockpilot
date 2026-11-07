@@ -34,7 +34,9 @@ Para desenvolvimento use `STOCKPILOT_HOME=<pasta>`.
 - `docs/STATUS.md` — o que está pronto, parcial e não testado
 - `docs/LIMITACOES.md` — limitações e premissas (leia antes de vender)
 - `docs/FONTES_TRIBUTARIAS_E_TRABALHISTAS.md` — de onde vêm as tabelas e como atualizá-las
-- `docs/LICENCIAMENTO.md` — como emitir licenças (ferramenta do fabricante)
+- `docs/LICENCIAMENTO.md` — chaves de licença (hoje DESLIGADAS; o produto é vendido sem ativação)
+- `docs/ASSINATURA_DO_INSTALADOR.md` — como assinar o instalador no Windows
+- `docs/TERMOS_DE_USO.md`, `docs/POLITICA_DE_PRIVACIDADE.md` — modelos a preencher; `docs/pdf/` — PDFs (`python tools/build_docs_pdf.py`)
 - `docs/POLITICA_DE_RETENCAO.md` — retenção de dados e LGPD
 - `docs/MANUAL_DO_USUARIO.md` — guia rápido para o lojista
 - `docs/FASE1_PLANEJAMENTO.md` — arquitetura, modelo de dados, riscos

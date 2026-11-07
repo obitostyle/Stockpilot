@@ -283,6 +283,8 @@ class SettingsPage(Page):
         self.tabs = QTabWidget()
         self.parts = [("Geral", GeneralTab(ctx)), ("Usuários e segurança", UsersTab(ctx)), ("Licença", LicenseTab(ctx))]
         for n, w in self.parts:
+            if n == "Licença" and not lic.LICENSING_ENABLED:
+                continue  # produto vendido sem ativação por licença
             self.tabs.addTab(w, n)
         root.addWidget(self.tabs, 1)
         self.tabs.currentChanged.connect(lambda *_: self.refresh())

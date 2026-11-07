@@ -27,6 +27,10 @@ from ..domain.errors import ValidationError
 from ..services.settings_service import get_setting, set_setting
 from .public_key import PUBLIC_KEY_B64
 
+# Decisão comercial (06/11/2026): o produto é vendido SEM ativação por licença. Com False, o programa não mostra
+# avaliação nem pede chave (a aba "Licença" some). O código de chaves continua disponível para uso futuro.
+LICENSING_ENABLED = False
+
 EVAL_DAYS = 30
 ENFORCE_AFTER_EVAL = False   # decisão comercial pendente: ver docstring
 

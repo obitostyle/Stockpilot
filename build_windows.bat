@@ -44,10 +44,19 @@ start "" /wait dist\StockPilot\StockPilot.exe --selftest
 if errorlevel 1 ( echo [ERRO] O executavel nao passou no autoteste: & type "%TEMP%\stockpilot-selftest.txt" & goto :fim )
 type "%TEMP%\stockpilot-selftest.txt"
 
+rem --- 4b. assinatura digital (OPCIONAL: so se voce tiver um certificado; veja docs\ASSINATURA_DO_INSTALADOR.md) ---
+rem     Defina antes: set SIGN_PFX=C:\caminho\certificado.pfx   e   set SIGN_PFX_PASSWORD=senha   (a senha NAO fica salva em arquivo)
+set SIGNTOOL=
+if defined SIGN_PFX for /f "delims=" %%s in ('where signtool 2^>nul') do if not defined SIGNTOOL set "SIGNTOOL=%%s"
+if defined SIGN_PFX if not defined SIGNTOOL for /f "delims=" %%s in ('dir /b /s "%ProgramFiles(x86)%\Windows Kits\10\bin\*signtool.exe" 2^>nul ^| findstr /i "x64"') do set "SIGNTOOL=%%s"
+if defined SIGN_PFX if not defined SIGNTOOL echo [AVISO] SIGN_PFX definido, mas o signtool.exe nao foi encontrado ^(instale o Windows SDK^). Seguindo SEM assinatura.
+if defined SIGNTOOL echo      Assinando StockPilot.exe...
+if defined SIGNTOOL "%SIGNTOOL%" sign /f "%SIGN_PFX%" /p "%SIGN_PFX_PASSWORD%" /fd sha256 /tr http://timestamp.digicert.com /td sha256 /d "StockPilot" dist\StockPilot\StockPilot.exe || goto :erro
+
 rem --- 5. instalador (Inno Setup) ---
 set VER=
 for /f "delims=" %%v in ('set "PYTHONPATH=src" ^& .venv\Scripts\python -c "from stockpilot import __version__; print(__version__)"') do set VER=%%v
-if "%VER%"=="" set VER=0.7.0
+if "%VER%"=="" set VER=0.7.1
 set ISCC=
 if exist "%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe" set ISCC=%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe
 if exist "%ProgramFiles%\Inno Setup 6\ISCC.exe" set ISCC=%ProgramFiles%\Inno Setup 6\ISCC.exe
@@ -64,6 +73,9 @@ if "%ISCC%"=="" (
 )
 echo [5/5] Gerando o instalador...
 "%ISCC%" /DAppVersion=%VER% installer\stockpilot.iss || goto :erro
+if defined SIGNTOOL echo      Assinando o instalador...
+if defined SIGNTOOL "%SIGNTOOL%" sign /f "%SIGN_PFX%" /p "%SIGN_PFX_PASSWORD%" /fd sha256 /tr http://timestamp.digicert.com /td sha256 /d "StockPilot - Instalador" "dist_installer\StockPilot-Setup-%VER%.exe" || goto :erro
+if defined SIGNTOOL (echo      Instalador ASSINADO.) else echo      [AVISO] Instalador SEM assinatura digital: o Windows vai mostrar o aviso do SmartScreen.
 echo.
 echo ============================================================
 echo   PRONTO!  Instalador em:  dist_installer\StockPilot-Setup-%VER%.exe

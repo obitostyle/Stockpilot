@@ -27,7 +27,7 @@ jobs:
           QT_QPA_PLATFORM: offscreen
         shell: pwsh
         run: |
-          $p = Start-Process dist\StockPilotAI\StockPilotAI.exe -ArgumentList "--selftest" -Wait -PassThru
+          $p = Start-Process dist\StockPilot\StockPilot.exe -ArgumentList "--selftest" -Wait -PassThru
           Get-Content "$env:TEMP\stockpilot-selftest.txt"
           if ($p.ExitCode -ne 0) { exit 1 }
       - name: Instalador (Inno Setup)
@@ -37,5 +37,5 @@ jobs:
           & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" /DAppVersion=$ver installer\stockpilot.iss
       - uses: actions/upload-artifact@v4
         with:
-          name: StockPilotAI-Setup
+          name: StockPilot-Setup
           path: dist_installer/*.exe

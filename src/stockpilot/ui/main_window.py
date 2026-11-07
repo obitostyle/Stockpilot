@@ -266,8 +266,12 @@ class MainWindow(QMainWindow):
             self.chip.setToolTip("Abrir o cadastro da empresa")
         self.chip.style().unpolish(self.chip)
         self.chip.style().polish(self.chip)
-        with self.ctx.db.session_scope() as s:
-            st = license_service.license_status(s)
-        lic = "Licenciado para " + st.customer if st.ok else ("Avaliação — " + st.message if st.state == "avaliacao" else st.message)
+        if license_service.LICENSING_ENABLED:
+            with self.ctx.db.session_scope() as s:
+                st = license_service.license_status(s)
+            lic = "Licenciado para " + st.customer if st.ok else ("Avaliação — " + st.message if st.state == "avaliacao" else st.message)
+        else:
+            from .. import __version__
+            lic = f"StockPilot {__version__}"
         self.statusBar().showMessage(f"{lic}   •   Banco de dados: {self.ctx.db.path}")
 

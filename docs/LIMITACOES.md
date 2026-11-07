@@ -31,12 +31,12 @@ Leia antes de comercializar. Nada aqui é escondido do usuário: as telas mostra
 - Sem multi-loja, sem multi-usuário simultâneo em rede (banco local de um computador).
 
 ## Licenciamento
-- Chave assinada (Ed25519) validada offline para o ID da instalação. Qualquer verificação local pode ser burlada por quem editar o programa; o objetivo é conformidade, não anticópia.
-- **Decisão comercial pendente:** o que acontece após os 30 dias de avaliação. Hoje: **nada é bloqueado**, só aparece o aviso (`ENFORCE_AFTER_EVAL = False`).
+- **Decisão comercial (06/11/2026): o produto é vendido sem ativação por licença.** O programa não mostra período de avaliação, não pede chave e nada é bloqueado (`LICENSING_ENABLED = False` em `licensing/service.py`). A aba "Licença" não aparece.
+- Consequência aceita: o programa pode ser copiado e usado por quem não comprou. O módulo de chaves assinadas (Ed25519) continua no código, desligado, caso a decisão mude.
 
 ## Testes e plataforma
 - Desenvolvido e testado em **Linux** (pytest + Qt offscreen + executável PyInstaller Linux com autoteste). **Nada foi executado em Windows**: o `.exe`, o instalador Inno Setup e o comportamento visual no Windows precisam de teste real (loja piloto) antes de vender.
-- Executável não assinado digitalmente: o Windows SmartScreen/antivírus pode alertar. Recomenda-se certificado de assinatura de código.
+- Executável **não assinado** até haver certificado de assinatura de código: o SmartScreen e o Controle de Aplicativo Inteligente podem alertar ou bloquear. O `build_windows.bat` já assina o programa e o instalador quando `SIGN_PFX` está definido (ver `docs/ASSINATURA_DO_INSTALADOR.md`).
 
 ## Pasta de dados
 

@@ -17,7 +17,7 @@ Legenda: ✅ concluído e testado (Linux) · 🟡 parcial · ⏳ pendente · ⚠
 | 15 relatórios (Excel e PDF) | ✅ | |
 | Backup manual/automático, verificação SHA-256, restauração com cópia de segurança | ✅ | |
 | Usuários, perfis (Admin/Gerente/Operador), login opcional | ✅ | |
-| Licença offline (Ed25519), avaliação 30 dias | 🟡 | política pós-avaliação é decisão comercial |
+| Licença offline (Ed25519) | ⏸ | desligada por decisão comercial: produto vendido sem ativação |
 | PyInstaller (Linux) com autoteste | ✅ | |
 | Executável e instalador Windows (PyInstaller + Inno Setup) | ⚠️ | scripts prontos; **nunca executados em Windows** |
 | Assinatura de código, atualização automática | ⏳ | |
