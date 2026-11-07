@@ -106,13 +106,15 @@ def build(md: Path, out: Path, title: str) -> None:
             ordered = bool(re.match(r"\s*\d+\.", ln))
             items = []
             while i < len(lines) and re.match(r"\s*(-|\d+\.)\s", lines[i]):
-                items.append(ListItem(Paragraph(inline(re.sub(r"^\s*(-|\d+\.)\s+", "", lines[i])), ST["p"]), leftIndent=14))
-                i += 1
-                # linhas de continuação com recuo (sub-itens): anexa ao item anterior como texto
-                while i < len(lines) and lines[i].startswith("  ") and lines[i].strip():
-                    sub = re.sub(r"^\s*(-|\d+\.)\s+", "", lines[i])
-                    items.append(ListItem(Paragraph("– " + inline(sub), ST["p"]), leftIndent=26, bulletType="bullet", value=" "))
+                if lines[i].startswith(" "):  # sub-item solto: vira linha do item anterior
                     i += 1
+                    continue
+                txt = inline(re.sub(r"^\s*(-|\d+\.)\s+", "", lines[i]))
+                i += 1
+                while i < len(lines) and lines[i].startswith("  ") and lines[i].strip():
+                    txt += "<br/>&nbsp;&nbsp;&nbsp;– " + inline(re.sub(r"^\s*(-|\d+\.)\s+", "", lines[i]))
+                    i += 1
+                items.append(ListItem(Paragraph(txt, ST["p"]), leftIndent=14))
             flow += [ListFlowable(items, bulletType="1" if ordered else "bullet", start=1 if ordered else "•", leftIndent=14,
                                   bulletFontName=F, bulletFontSize=9), Spacer(1, 4)]
         else:
