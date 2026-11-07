@@ -2,7 +2,7 @@
 
 **MODELO PARA REVISÃO.** Preencha os campos entre colchetes, confira se descreve o que você realmente faz (por exemplo, se usa ferramentas de estatística no site) e, de preferência, peça revisão de um advogado. Este texto não é aconselhamento jurídico.
 
-Última atualização: [DATA]
+Última atualização: 07/11/2026
 
 ## 1. Resumo
 
@@ -10,7 +10,7 @@ O programa StockPilot **não envia os seus dados para ninguém**. Tudo o que voc
 
 ## 2. Quem é o responsável
 
-**[NOME OU RAZÃO SOCIAL]**, **[CPF/CNPJ]**, contato para assuntos de privacidade: **[E-MAIL DE SUPORTE]**.
+**Breno Sidney Ribeiro Monsor**, CPF **183.***.***-89**, contato para assuntos de privacidade: **entrepaines@gmail.com**.
 
 ## 3. Dados que ficam só no seu computador
 
@@ -38,11 +38,11 @@ Não vendemos dados e não os usamos para publicidade de terceiros.
 
 ## 6. Por quanto tempo guardamos
 
-Dados de compra, pelo tempo exigido para obrigações fiscais e contábeis e para eventual defesa em processo. Mensagens de suporte, por até [PREENCHER, por exemplo 2 anos] após o último contato. E-mails de avaliação, até você pedir para sair.
+Dados de compra, pelo tempo exigido para obrigações fiscais e contábeis e para eventual defesa em processo. Mensagens de suporte, por até 2 anos após o último contato. E-mails de avaliação, até você pedir para sair.
 
 ## 7. Seus direitos
 
-Pela LGPD (art. 18), você pode pedir: confirmação do tratamento, acesso, correção, anonimização ou eliminação quando cabível, portabilidade, informação sobre compartilhamento e revogação do consentimento. Escreva para **[E-MAIL DE SUPORTE]**. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
+Pela LGPD (art. 18), você pode pedir: confirmação do tratamento, acesso, correção, anonimização ou eliminação quando cabível, portabilidade, informação sobre compartilhamento e revogação do consentimento. Escreva para **entrepaines@gmail.com**. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
 
 ## 8. Segurança
 

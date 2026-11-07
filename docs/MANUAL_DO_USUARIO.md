@@ -101,7 +101,7 @@ Como o sistema distingue o leitor da digitação: o leitor envia as teclas com p
 
 ## Suporte
 
-Escreva para **[E-MAIL DE SUPORTE]** com o e-mail usado na compra. Descreva o que você estava fazendo e o que apareceu na tela, e anexe uma foto da tela.
+Escreva para **entrepaines@gmail.com** com o e-mail usado na compra. Descreva o que você estava fazendo e o que apareceu na tela, e anexe uma foto da tela.
 
 Se o problema for um erro do programa, anexe também o arquivo `stockpilot.log` da pasta `logs` (veja "Backup e seus dados"). Ele registra o funcionamento do programa e **pode conter nomes de produtos e caminhos de pastas**; envie só se estiver de acordo.
 

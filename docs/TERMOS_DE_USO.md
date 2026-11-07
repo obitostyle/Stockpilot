@@ -2,11 +2,11 @@
 
 **MODELO PARA REVISÃO.** Preencha os campos entre colchetes e, de preferência, peça a um advogado que revise antes de publicar. Este texto foi escrito como ponto de partida e não é aconselhamento jurídico.
 
-Última atualização: [DATA]
+Última atualização: 07/11/2026
 
 ## 1. Quem somos
 
-O StockPilot é um programa de computador para Windows, oferecido por **[NOME OU RAZÃO SOCIAL]**, inscrito sob o **[CPF/CNPJ]**, contato **[E-MAIL DE SUPORTE]** ("Fabricante"). Quem compra e usa o programa é o "Usuário".
+O StockPilot é um programa de computador para Windows, oferecido por **Breno Sidney Ribeiro Monsor**, inscrito sob o CPF **183.***.***-89**, contato **entrepaines@gmail.com** ("Fabricante"). Quem compra e usa o programa é o "Usuário".
 
 ## 2. O que o programa é
 
@@ -31,7 +31,7 @@ O programa e seu código continuam sendo propriedade do Fabricante. A compra dá
 
 O pagamento é único, sem mensalidade, feito pela plataforma de vendas indicada na página de compra. Tarifas e meios de pagamento são os dessa plataforma.
 
-O Usuário pode pedir o **reembolso em até 7 (sete) dias corridos** a contar da compra, conforme o art. 49 do Código de Defesa do Consumidor, pelo e-mail **[E-MAIL DE SUPORTE]** ou pela plataforma. O valor é devolvido pela mesma forma de pagamento.
+O Usuário pode pedir o **reembolso em até 7 (sete) dias corridos** a contar da compra, conforme o art. 49 do Código de Defesa do Consumidor, pelo e-mail **entrepaines@gmail.com** ou pela plataforma. O valor é devolvido pela mesma forma de pagamento.
 
 ## 6. Atualizações e suporte
 
@@ -62,4 +62,4 @@ Estes Termos podem ser atualizados. A versão em vigor é a publicada na página
 
 Aplica-se a lei brasileira. Fica eleito o foro da comarca de **[CIDADE/UF]**, sem prejuízo do foro do domicílio do consumidor, quando a lei assim determinar.
 
-Dúvidas: **[E-MAIL DE SUPORTE]**.
+Dúvidas: **entrepaines@gmail.com**.
